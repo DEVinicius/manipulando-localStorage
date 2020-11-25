@@ -77,7 +77,12 @@ function addToChart(produto)
 
         if(situation)
         {
-            deserialized_cart.push(produto)
+            deserialized_cart.push(
+                {
+                    produto, 
+                    "quantidade":1
+                }
+            )
         }
         else
         {
